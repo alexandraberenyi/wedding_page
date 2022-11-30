@@ -1,0 +1,296 @@
+/*========= General Style =========*/
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Single-direction margin declaration to establish vertical rhythm. */
+  h1,h2,h3,
+  ul,ol,
+  p,
+  img {
+      margin-bottom: 1.5rem;
+  }
+  
+  body {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+    font-family: 'Libre Baskerville', serif; 
+    color: #444349;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  .locations,
+  .program,
+  .gifts,
+  .qa,
+  .contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  
+  h1, h2{
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #bd806e;
+  }
+  
+  a:hover{
+    color: #eda087;
+  }
+  
+  img{
+    height: 7.5rem;
+  }
+  
+  /*====== Header ======*/
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    text-align: center;
+  }
+  
+  .hwrapper{
+    display: table-cell;
+    vertical-align: middle;
+    color: hsla(0,0%,100%,.9);
+    font-size:1.5rem;
+  }
+  
+  .front {
+    background-color: rgba(0,0,0,.6);
+    padding: 1rem;
+  }
+  
+  .tagline {
+    letter-spacing:.125rem;
+  }
+  h1 {
+    display: inline-block;
+    color: #d2ba87;
+    font-size: 3.25rem;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    margin-top: -1rem;
+  }
+  
+  .date{
+    display:block;
+  }
+  
+  .date::before,
+  .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+  
+  @media (min-width:768px) {
+    .front {
+      background-color: rgba(0,0,0,.6);
+      padding: 1rem;
+      margin-left: 25vw;
+      margin-right: 25vw;
+    }
+      
+      .tagline {
+        text-transform: uppercase;
+      }
+    
+      h1 {
+        font-size: 7rem;
+      }
+    }
+  
+  /*======= Locations =======*/
+  
+  .ceremony,
+  .photos,
+  .party {
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: .025rem;
+  }
+  
+  .ceremony::after,
+  .photos::after,
+  .party::after
+  {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+  }
+  
+  
+  .loct {
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  @media (min-width:768px) {
+     .blurb {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+  
+    .blurb::after {
+      display: none;
+    }
+  }
+  
+  
+  
+  /* ====== Program ======*/
+  
+  .program {
+    background-color: hsla(100,0%,0%,.6);
+    width: 100%;
+    padding: 1rem;
+    color: #d2ba87;
+  }
+  
+  .program p, .program ul {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+  }
+  
+  .program ul{
+    text-align: left;
+    letter-spacing: .025rem;
+  }
+  
+  .program p {
+    font-style: italic;
+  }
+  
+  @media (min-width:768px) {
+    ul{
+      width: 30vw;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  
+  /*========= Gifts ========*/
+  
+  .gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+    margin-bottom: 0;
+  }
+  
+  /*========= QandA ========*/
+  
+  .qa {
+    background-color: hsla(100,0%,0%,.6);
+    width: 100%;
+    padding: 1rem;
+    color: #d2ba87;
+  }
+  
+  .question {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  .answer {
+    margin-bottom: 2rem;
+  }
+  
+  .question, .answer {
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  .ta::after,
+  .ff::after,
+  .oss::after
+  {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 40vw;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+  }
+  
+  @media (min-width:768px) {
+    .ta::after,
+    .ff::after,
+    .oss::after{
+      display: none;
+     }
+    
+    .grp{
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 1.5rem;
+      margin: .5rem;
+     }
+    
+  }
+  
+  /*========= Footer ========*/
+  
+  footer{
+    height: 10vh;
+    display: table;
+    background-color: hsla(100,0%,0%,.6);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .fwrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 0;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer small {
+    line-height: 1.5;
+  }
+  
+  @media (min-width: 768px) {
+  
+    footer {
+      min-height: 7vh;
+    }
+  
+  }
+  
+  
+  
+  
